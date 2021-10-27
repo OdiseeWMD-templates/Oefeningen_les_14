@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="newUser">
+    <h2>new User</h2>
+    <label for="naam">naam:</label>
+    <input type="text" name="naam" id="naam"><br>
+    <label for="email">email:</label>
+    <input type="email" name="email" id="email"><br>
+    <label>geslacht:</label>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Man</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Vrouw</label><br>
+    <button type="submit">Verzenden</button>
+  </form>
+
+
+  <form id="allUsers">
+    <h2>Users</h2>
+    <select name="users" id="users" size="20">
+
+    </select>
+    <br>
+    <button>Previous</button>
+    <button>Next</button>
+  </form>
+
+  <form id="posts">
+    <h2>Posts</h2>
+    <select name="posts" id="posts" size="20">
+
+    </select>
+    <textarea disabled id="postContent"></textarea>
+    <br>
+    <button>Previous</button>
+    <button>Next</button>
+  </form>
+
+  <form id="newPost">
+    <h2>New Post</h2>
+    <label for="title">titel:</label>
+    <input type="text" name="title" id="title"><br>
+    <label for="bodyText">body:</label>
+    <textarea name="bodyText" id="bodyText"></textarea> <br>
+    <button type="submit">Verzenden</button>
+  </form>
+</body>
+
+</html>

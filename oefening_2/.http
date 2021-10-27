@@ -1,0 +1,32 @@
+@Authorization-token = //Jouw API token
+
+### Get users
+GET https://gorest.co.in/public/v1/users
+
+### Get user with ID 200
+GET https://gorest.co.in/public/v1/users/200
+
+### Create new user
+POST https://gorest.co.in/public/v1/users
+Authorization: Bearer {{Authorization-token}}
+Content-Type: application/json
+
+{ 
+  "name": "demo",
+  "email": "test@test.test", //use a different mail adres.
+  "gender": "male", 
+  "status":"inactive"
+}
+
+### Get post for user 200
+GET https://gorest.co.in/public/v1/users/200/posts
+
+### Create post for user
+POST https://gorest.co.in/public/v1/users/200/posts
+Authorization: Bearer {{Authorization-token}}
+Content-Type: application/json
+
+{ 
+  "title": "demo",
+  "body": "Hello, this is a test"
+}
